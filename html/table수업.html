@@ -1,0 +1,73 @@
+<!--table-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 옛날방식
+    <tr>
+-            <td>text</td>
+-            <td>text</td>
+-            <td>text</td>
+-            <td>text</td>
+-        </tr>
+-        <tr>
+-            <td>text</td>
+-            <td>text</td>
+-            <td>text</td>
+-            <td>text</td>-->
+
+    <table border="1" width="100%" summary="세부설명">
+<!--현재방식-->
+<summary>표에대한 자세한 설명</summary>
+
+<caption>표의 제목</caption>
+
+<colgroup>
+    <col width="100" />
+    <col>
+    <col width="100" />
+    <col>
+</colgroup>
+    <thead>
+        <!--<tr>
+        <th clspan="4">text</th>-->
+        <tr>
+            <!--<th colspan="4" scope="colgroup">text</th>-->
+            <th scope="colgroup" colspan="4"> </th>
+        </tr>
+        <tr>
+            <th scope="col">text</th>
+            <th scope="col">text</th>
+            <th scope="col">text</th>
+            <th scope="col">text</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">tbody</th>
+            <th scope="row">tbody</th>
+            <th scope="row">tbody</th>
+            <th scope="row">tbody</th>
+        </tr>
+        <tr>
+            <td>tbody</td>
+            <td>tbody</td>
+            <td>tbody</td>
+            <td>tbody</td>
+        </tr>
+        <tr>
+            <td>tbody</td>
+            <td>tbody</td>
+            <td>tbody</td>
+            <td>tbody</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
