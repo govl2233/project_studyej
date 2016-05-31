@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fixed부모자식관계없음</title>
+    <style type="text/css">
+    
+        .header{
+            border:1px #f00 solid;
+            width:100%; 
+            height: 80px;
+            background-color: rgba(0,0,0,.5);
+            position: fixed;
+            top:0;
+        }
+   
+        .contents{
+            border:1px #f0f solid;
+            width: 500px;
+            height: 1000px;
+            margin:90px auto;
+        }
+        
+            .top{
+            border:1px #00f solid;
+            width: 80px;
+            height: 200px;
+            left:50%;
+            margin-left:260px;
+            position:fixed;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="contents">
+        <div class="top"></div>
+    </div>
+        <!--contents 안에 top를 감싸줄때는 top class 안에 top위치를 안넣어줘도된다.-->
+        <!--그러나 class가 따로 지정될때에는 stlye에서 위치top을 설정해줘야한다.(fixed는 absolute랑 같아서 화면상기준으로되기때문에)-->
+    
+ </body>
+</html>

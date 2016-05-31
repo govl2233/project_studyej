@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>부모자식관계</title>
+    <style type="text/css">
+        .wrapper{width: 600px; height: 600px; border:1px #f0f solid; position:absolute; overflow:hidden;}
+        .wrap{width: 500px; height: 500px; border:1px #f00 solid;}
+        .box{width: 220px; height: 220px; border:1px #f00 solid; position:absolute; left:500px;}
+        /*overflow:hidden을 주면 자식요소는 부모요소안에만큼은 보여지기때문에 left로 부모를 넘어가면 잘리는것처럼보인다.*/
+   
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
